@@ -31,7 +31,7 @@ create and mount their own filesystem implementations.
 %__python setup.py build
 
 %install
-%python_install
+%{__python} setup.py install
 
 %files -f INSTALLED_FILES
 %doc LICENSE Changes.* README.* examples
