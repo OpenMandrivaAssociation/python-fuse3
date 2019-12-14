@@ -35,4 +35,4 @@ create and mount their own filesystem implementations.
 
 %files
 %doc LICENSE Changes.* README.* examples
-%{python_sitelib}/*
+%{python_sitearch}/*
