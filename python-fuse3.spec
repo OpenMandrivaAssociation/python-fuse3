@@ -12,6 +12,7 @@ Group: Development/Python
 BuildRequires: pkgconfig(fuse3)
 BuildRequires: python-devel
 BuildRequires: python3egg(cython)
+BuildRequires: python3egg(setuptools)
 
 Provides: pyfuse3 = %version-%release
 
