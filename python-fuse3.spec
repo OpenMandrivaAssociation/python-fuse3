@@ -33,5 +33,5 @@ create and mount their own filesystem implementations.
 %install
 %{__python} setup.py install --root $RPM_BUILD_ROOT
 
-%files -f INSTALLED_FILES
+%files -f
 %doc LICENSE Changes.* README.* examples
