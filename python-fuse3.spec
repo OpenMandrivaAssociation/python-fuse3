@@ -28,7 +28,7 @@ create and mount their own filesystem implementations.
 %setup -n %{origname}-%{version}
 
 %build
-%__python setup.py
+%__python setup.py build
 
 %install
 %python_install --optimize=2 --record=INSTALLED_FILES
