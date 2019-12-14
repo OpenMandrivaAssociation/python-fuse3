@@ -5,7 +5,7 @@ Name: python-fuse3
 Version: 2.0.0
 Release: 1
 Url: https://github.com/libfuse/pyfuse3/
-Source: https://github.com/libfuse/pyfuse3/archive/release-%{version}.tar.gz
+Source: https://github.com/libfuse/pyfuse3/archive/release-%{version}/%{origname}-release-%{version}.tar.gz
 License: LGPL
 Group: Development/Python
 
