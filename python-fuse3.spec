@@ -5,7 +5,7 @@ Name: python-fuse3
 Version: 2.0.0
 Release: 1
 Url: https://github.com/libfuse/pyfuse3/
-Source: https://github.com/libfuse/pyfuse3/archive/release-%{version}/%{origname}-release-%{version}.tar.gz
+Source: https://files.pythonhosted.org/packages/source/p/pyfuse3/%{origname}-%{version}.tar.gz
 License: LGPL
 Group: Development/Python
 
@@ -25,13 +25,14 @@ also aims to provide a secure method for non privileged users to
 create and mount their own filesystem implementations.
 
 %prep
-%setup -n %{origname}-release-%{version}
+%setup -n %{origname}-%{version}
 
 %build
-%__python3 setup.py
+%__python setup.py build
 
 %install
-%python3_install --optimize=2 --record=INSTALLED_FILES
+%{__python} setup.py install --root $RPM_BUILD_ROOT
 
-%files -f INSTALLED_FILES
+%files
 %doc LICENSE Changes.* README.* examples
+%{python_sitearch}/*
