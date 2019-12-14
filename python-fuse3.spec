@@ -24,7 +24,7 @@ also aims to provide a secure method for non privileged users to
 create and mount their own filesystem implementations.
 
 %prep
-%setup -n %{origname}-%{release}-%{version}
+%setup -n %{origname}-release-%{version}
 
 %build
 %__python3 setup.py
